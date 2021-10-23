@@ -12,8 +12,7 @@
 
 <p>
 	<label for="<?php echo $this->get_field_id('type'); ?>">Type: </label>
-	<select id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type') ?>
-	">
+	<select id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type') ?>">
 		<option value="static" <?php selected( $type, 'static' );?> >Static</option>
 		<option value="scroll" <?php selected( $type, 'scroll' );?> >Scroll</option>
 	</select>
