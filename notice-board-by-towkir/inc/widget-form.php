@@ -7,12 +7,12 @@
 <p>
 	<label for="<?php echo $this->get_field_id('count'); ?>">No. of notices to display: </label>
 	<input type="number" size="2" id="<?php echo $this->get_field_id('count'); ?>" 
-		name="<?php echo $this->get_field_name('count'); ?>" value="<?php echo $count; ?>" />
+		name="<?php echo htmlspecialchars ($this->get_field_name('count')); ?>" value="<?php echo $count; ?>" />
 </p>
 
 <p>
-	<label for="<?php echo $this->get_field_id('type'); ?>">Type: </label>
-	<select id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type') ?>">
+	<label for="<?php echo htmlspecialchars ($this->get_field_id('type')); ?>">Type: </label>
+	<select id="<?php echo htmlspecialchars ($this->get_field_id('type')); ?>" name="<?php echo htmlspecialchars ($this->get_field_name('type')) ?>">
 		<option value="static" <?php selected( $type, 'static' );?> >Static</option>
 		<option value="scroll" <?php selected( $type, 'scroll' );?> >Scroll</option>
 	</select>
