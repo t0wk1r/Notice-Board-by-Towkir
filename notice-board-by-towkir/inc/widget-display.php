@@ -5,7 +5,7 @@
 	 */
 	echo $before_widget;
 
-	echo $before_title . $title . $after_title;
+	echo esc_attr ($before_title . $title . $after_title);
 
 	/**
 	 * Custom query arguments
@@ -48,7 +48,7 @@
 					get_permalink() . '" target="_blank">' . get_the_title() . '</a></li>';
 			}
 			else {
-				echo '<li><a href="' . get_post_meta( $post->ID, 'towkir_notice_url', true ) 
+				echo esc_attr ('<li><a href="' . get_post_meta( $post->ID, 'towkir_notice_url', true )) 
 					. '" target="_blank">' . get_the_title() . '</a></li>';
 			}
 		}
