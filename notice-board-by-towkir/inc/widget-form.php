@@ -7,7 +7,7 @@
 <p>
 	<label for="<?php echo esc_attr ($this->get_field_id('count')); ?>">No. of notices to display: </label>
 	<input type="number" size="2" id="<?php echo esc_attr ( $this->get_field_id('count')); ?>" 
-		name="<?php echo esc_attr ($this->get_field_name('count')); ?>" value="<?php echo $count; ?>" />
+		name="<?php echo esc_attr ($this->get_field_name('count')); ?>" value="<?php echo esc_attr($count); ?>" />
 </p>
 
 <p>
