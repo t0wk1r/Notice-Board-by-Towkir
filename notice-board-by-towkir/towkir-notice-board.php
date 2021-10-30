@@ -142,7 +142,7 @@ function towkir_notice_save_post( $post_id ){
 	
 	// update notice url
 	if( isset($_POST['towkir_notice_url']) )
-		update_post_meta( $post_id, 'towkir_notice_url', $_POST['towkir_notice_url']);
+		update_post_meta( $post_id, 'towkir_notice_url', sanitize_text_field( $_POST['towkir_notice_url']));
 }
 
 /**
