@@ -113,7 +113,7 @@ function towkir_notice_meta_box() {
 
 	$html .= '" /> <a href="#" id="clear_notice_url">Clear</a>';
 
-	echo $html;
+	echo esc_attr($html);
 	wp_enqueue_script( 'towkir_notice', plugin_dir_url( __FILE__ ) . 
 		'js/towkir_notice_script.js', array('jquery'), '1.0.0', 1 );
 }
